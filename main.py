@@ -33,10 +33,3 @@ class LeveredIndexing(QCAlgorithm):
         elif self.entryPrice * 0.9 > price: 
             self.SetHoldings(self.spy, 1.5) #sets holdings to 150% of portfolio
             self.Log("Buy SPY @" + str(price))
-        '''OnData event is the primary entry point for your algorithm. Each new data point will be pumped in here.
-            Arguments:
-                data: Slice object keyed by symbol containing the stock data
-        '''
-
-        # if not self.Portfolio.Invested:
-        #    self.SetHoldings("SPY", 1)
