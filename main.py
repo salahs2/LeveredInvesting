@@ -33,3 +33,6 @@ class LeveredIndexing(QCAlgorithm):
         elif self.entryPrice * 0.9 > price: 
             self.SetHoldings(self.spy, 1.5) #sets holdings to 150% of portfolio
             self.Log("Buy SPY @" + str(price))
+            
+            
+            
